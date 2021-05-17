@@ -8,14 +8,15 @@
 /* Изменение стандарта разметки страницы с content- box,
  для стабилизации ширины */
 
-/* html { 
+ html { 
   box-sizing: border-box;
 }
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-}*/
+}
+
 body {
   font-family: Roboto, sans-serif;
   color: var(--primery-color);
@@ -29,6 +30,7 @@ body {
   margin: 0;
   padding-left: 15px;
   padding-right: 15px;
+  /* background-color: tomato; */
 } 
 
 .list {
@@ -139,7 +141,8 @@ margin-top: 40px;
   margin-top: 94px;
 }
 .team {
-  margin-top: 94px;
+  margin: 94px 0;
+ 
 }
 
 .feautures-list h3 {
@@ -324,9 +327,9 @@ letter-spacing: 0.03em;
 width: 1600px;
 height: 0px;
 left: 0px;
-top: 80px;
-margin-bottom: 100px;
-margin-top: 80px;
+/* top: 80px; */
+/*margin-bottom: 100px;
+margin-top: 32px;*/
 padding: 0;
 border: 1px solid #ECECEC;
 
@@ -372,8 +375,9 @@ min-width: 100px;
     color: var(--primery-color);
   }
   .project-works {
-    margin-top: 50px;
+    margin-top: 50px;  
     margin-bottom: 94px;
+    /* padding-top:50px; */
   }
 
 .project-works h3 {
