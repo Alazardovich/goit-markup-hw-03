@@ -7,6 +7,7 @@
   --card-set-gap: 30px;
   --card-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),
   opx 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+  --primery-text:"Roboto", sans-serif;
 }
 /* Изменение стандарта разметки страницы с content- box,
  для стабилизации ширины */
@@ -21,7 +22,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primery-text);
   color: var(--primery-color);
   background: var(--primery-background); 
   text-decoration: none;
@@ -71,7 +72,7 @@ margin: 0px;
 
 .page-header {
 
-  font-family:  "Roboto", sans-serif;
+  font-family:  var(--primery-text);
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14em;
@@ -114,7 +115,7 @@ border-bottom: 1px solid #ECECEC;
 .page-hero {
     background: #2f303a;
     color: #ffffff;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--primery-text);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36em;
@@ -125,7 +126,7 @@ border-bottom: 1px solid #ECECEC;
   }
 
   .hero-title { 
-font-family: "Roboto", sans-serif;
+font-family: var(--primery-text);
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36em;
@@ -139,7 +140,7 @@ margin: 0;
   }
 
   .auth-nav.link {
-font-family:"Roboto", sans-serif;
+font-family: var(--primery-text);
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14em;
@@ -149,7 +150,7 @@ letter-spacing: 0.02em;
 
 
   .page-hero button {
-font-family: "Roboto", sans-serif;
+font-family: var(--primery-text);
 font-weight: bold;
 font-size: 16px;
 line-height: 1.87em;
@@ -170,7 +171,7 @@ margin-top: 40px;
 
 
 .feautures-list h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primery-text);
 font-weight: bold;
 font-size: 14px;
 line-height: 1.14em;
@@ -180,7 +181,7 @@ text-transform: uppercase;
 
 .features-list p {
   color: var(--title-color);
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primery-text);
 font-weight: normal;
 font-size: 14px;
 line-height: 1.7em;
@@ -188,7 +189,7 @@ letter-spacing: 0.03em;
 }
 
 .feature-title {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primery-text);
 font-weight: bold;
 font-size: 14px;
 line-height: 1.14em;
@@ -199,7 +200,7 @@ text-transform: uppercase;
 }
 
 .doing-work {
-  font-family: Roboto;
+  font-family: var(--primery-text);
 font-weight: bold;
 font-size: 36px;
 line-height: 1.16em;
@@ -209,7 +210,7 @@ padding-bottom: 50px;
 margin: 0;
 }
 .works-names {
-  font-family: Roboto;
+  font-family: var(--primery-text);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18em;
@@ -220,10 +221,12 @@ margin:0;
 }
 
 .features {
+  display: flex;
   margin: 0;
+  /* box-shadow: var(--card-shadow); */
 }
 .features p {
-font-family: Roboto;
+font-family: var(--primery-text);
 font-size: 16px;
 line-height: 1.18em;
 text-align: center;
@@ -235,7 +238,7 @@ margin-bottom: 0;
   
 
 .site-nav .link-header {
-font-family: Roboto;
+font-family: var(--primery-text);
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14em;
@@ -265,17 +268,6 @@ color: var(--primery-color);
    background-color: var(--section-background);
  }
 
-  /*.section-button.link {
-    color: var(--primery-color);
-  }
-  .section-button.link:hover,
-  .section-button.link:focus {
-    color: var(--accent-color);
-  }
-  
-.section-button button:active {
-  color: white;
-}*/
 .section-button p {
   color:var(--title-color);
 }
@@ -284,9 +276,8 @@ color: var(--primery-color);
 
 
 .address {
-  background: #2F303A;
- font-family: Roboto;
-font-style: normal;
+background: #2F303A;
+font-family: var(--primery-text);
 font-weight: normal;
 font-size: 14px;
 line-height: 1.71em;
@@ -295,7 +286,7 @@ margin: 0;
 }
  
 .email-address {
- font-family: Roboto;
+ font-family: var(--primery-text);
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
@@ -305,8 +296,7 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .tel-address {
-font-family: Roboto;
-font-style: normal;
+font-family: var(--primery-text);
 font-weight: normal;
 font-size: 14px;
 line-height: 1.71em;
@@ -314,11 +304,8 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
 
-
-
 .street-house {
-  font-family: Roboto;
-font-style: normal;
+  font-family: var(--primery-text);
 font-weight: normal;
 font-size: 14px;
 line-height: 1.71em;
@@ -336,25 +323,11 @@ letter-spacing: 0.03em;
 
 /* sectioin porfolio */
 .button-line {
-  list-style: none;
- 
+  list-style: none; 
 }
-/* .border-line { 
-  position: absolute;
-width: 1600px;
-height: 0px;
-left: 0px;*/
-/* top: 80px; */
-/*margin-bottom: 100px;
-margin-top: 32px;*/
-/* padding: 0; 
-border: 1px solid #ECECEC;
-
-}*/
 
 .section-button {
-  font-family: Roboto;
-font-style: normal;
+  font-family: var(--primery-text);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62em;
@@ -370,7 +343,7 @@ margin-bottom: 94px;
   margin: 0;
 }
 .link {
-font-family: Roboto;
+font-family: var(--primery-text);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62em;
@@ -395,11 +368,10 @@ min-width: 100px;
   .project-works {
     margin-top: 50px;  
     margin-bottom: 94px;
-    /* padding-top:50px; */
   }
 
 .project-works h3 {
-  font-family: Roboto;
+  font-family: var(--primery-text);
 font-style: normal;
 font-weight: bold;
 font-size: 18px;
@@ -408,8 +380,7 @@ letter-spacing: 0.06em;
 }
  
 .project-works p {
-  font-family: Roboto;
-font-style: normal;
+  font-family: var(--primery-text);
 font-weight: normal;
 font-size: 16px;
 line-height: 1.87em;
@@ -453,7 +424,6 @@ letter-spacing: 0.03em;
 /* logo white */
 .studio-white {color:white;}
 .email-address,.tel-address {text-decoration: none;
-/* cursor: default; */ 
 }
 
 
