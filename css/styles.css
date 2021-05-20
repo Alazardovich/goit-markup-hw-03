@@ -21,7 +21,7 @@
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--primery-color);
   background: var(--primery-background); 
   text-decoration: none;
@@ -37,6 +37,8 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  
+ 
   /* background-color: tomato; */
 } 
 
@@ -47,46 +49,72 @@ img {
 /* top header */
 
 .logo {
-cursor: default;
+/* cursor: default; */
 font-family: Raleway;
-font-style: normal;
 font-weight: bold;
 font-size: 26px;
 line-height: 1.2em;
 text-decoration: none;
 letter-spacing: 0.03em;
 color: var(--accent-color); 
+margin: 0px;
+/* display: flex; */
+
 }
 .studio-black {
   color:var(--primery-color);
 }
 /* front header */
 .link-header {text-decoration: none;
-  cursor: default;
+  /* cursor: default; */
 }
 
 .page-header {
 
-  font-family: Roboto;
-font-style: normal;
+  font-family:  "Roboto", sans-serif;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14em;
 letter-spacing: 0.02em;
 text-decoration: none;
 border-bottom: 1px solid #ECECEC;
-/* outline */
-
-
-
-
   }
+/* header menu */
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+}
 
+.display-nav-page {
+  display:flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.site-nav .group {
+  margin-left: 50px;
+}
+.site-nav .group:first-child {
+  margin-left: 0;
+}
+.auth-nav { 
+ display: flex; 
+ align-items: center;
+}
+.auth-nav .group {
+  margin-right: 50px;
+}
+.auth-nav .group:last-child {
+  margin-right: 0;
+}
 .page-hero {
     background: #2f303a;
     color: #ffffff;
-    font-family: Roboto;
-    font-style: normal;
+    font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36em;
@@ -97,8 +125,7 @@ border-bottom: 1px solid #ECECEC;
   }
 
   .hero-title { 
-    font-family: Roboto;
-font-style: normal;
+font-family: "Roboto", sans-serif;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36em;
@@ -110,14 +137,9 @@ margin: 0;
 
 
   }
-  
-  .auth-nav {
-    margin:0;
-  }
 
   .auth-nav.link {
-    font-family: Roboto;
-font-style: normal;
+font-family:"Roboto", sans-serif;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14em;
@@ -127,8 +149,7 @@ letter-spacing: 0.02em;
 
 
   .page-hero button {
-font-family: Roboto;
-font-style: normal;
+font-family: "Roboto", sans-serif;
 font-weight: bold;
 font-size: 16px;
 line-height: 1.87em;
@@ -146,14 +167,10 @@ margin-top: 40px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.team {
-  margin: 94px 0;
- 
-}
+
 
 .feautures-list h3 {
-  font-family: Roboto;
-font-style: normal;
+  font-family: "Roboto", sans-serif;
 font-weight: bold;
 font-size: 14px;
 line-height: 1.14em;
@@ -163,8 +180,7 @@ text-transform: uppercase;
 
 .features-list p {
   color: var(--title-color);
-  font-family: Roboto;
-font-style: normal;
+  font-family: "Roboto", sans-serif;
 font-weight: normal;
 font-size: 14px;
 line-height: 1.7em;
@@ -172,8 +188,7 @@ letter-spacing: 0.03em;
 }
 
 .feature-title {
-  font-family: Roboto;
-font-style: normal;
+  font-family: "Roboto", sans-serif;
 font-weight: bold;
 font-size: 14px;
 line-height: 1.14em;
@@ -185,7 +200,6 @@ text-transform: uppercase;
 
 .doing-work {
   font-family: Roboto;
-font-style: normal;
 font-weight: bold;
 font-size: 36px;
 line-height: 1.16em;
@@ -196,7 +210,6 @@ margin: 0;
 }
 .works-names {
   font-family: Roboto;
-font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18em;
@@ -211,8 +224,6 @@ margin:0;
 }
 .features p {
 font-family: Roboto;
-font-style: normal;
-font-weight: normal;
 font-size: 16px;
 line-height: 1.18em;
 text-align: center;
@@ -225,7 +236,6 @@ margin-bottom: 0;
 
 .site-nav .link-header {
 font-family: Roboto;
-font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14em;
@@ -321,6 +331,7 @@ letter-spacing: 0.03em;
   .style-button {
     color: white;
     background: var(--accent-color);
+    cursor:pointer;
   }
 
 /* sectioin porfolio */
@@ -407,15 +418,7 @@ letter-spacing: 0.03em;
 /* оформление flexbox-index */
 .feautures-list {
   display: flex;
-
-}
-
-.works.block-works {
-   flex-basis: calc(100%/3);
-}
-.works {
-   display: flex;
-
+ 
 }
 
 /* оформление flexbox-portfolio */
@@ -434,12 +437,6 @@ letter-spacing: 0.03em;
   margin-top: var(--card-set-gap);
 }
 
-.card {
-  box-shadow: var(--card-shadow);
-}
-.card-content {
-  padding: 0px;
-}
 .card-heading {
   padding: 20px 24px 0px;
   text-align: left;
@@ -449,12 +446,15 @@ letter-spacing: 0.03em;
   padding: 4px 24px 20px;
   text-align: left;
 }
-
+/* .block-projects {
+  border: 1px solid black;
+} */
 
 /* logo white */
 .studio-white {color:white;}
 .email-address,.tel-address {text-decoration: none;
-cursor: default;}
+/* cursor: default; */ 
+}
 
 
   
