@@ -129,8 +129,9 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin: 0;
-  padding: 200px 452px 280px;
+  margin: 0 0 30px 0;
+  /* padding: 200px 452px 280px; */
+
   /* outline */
 }
 /* .fon-hero {
@@ -337,6 +338,7 @@ img {
   background: var(--accent-color);
   cursor: pointer;
   padding: 10px 32px;
+  margin: auto;
 }
 
 /* sectioin porfolio */
@@ -357,6 +359,7 @@ img {
   display: flex;
   list-style: none;
   margin-bottom: 56px;
+  margin-top: 0;
 }
 
 .section-button > h2 {
@@ -446,9 +449,6 @@ img {
   padding: 4px 24px 20px;
   text-align: left;
 }
-/* .block-projects {
-  border: 1px solid black;
-} */
 
 /* logo white */
 .studio-white {
