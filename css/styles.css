@@ -15,30 +15,27 @@
 html {
   box-sizing: border-box;
 }
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
+} */
 
 body {
   font-family: var(--primery-text);
   color: var(--primery-color);
   background: var(--primery-background);
   text-decoration: none;
-}
-img {
-  max-width: 100%;
-  display: block;
+  margin: 0;
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  box-sizing: border-box;
   /* background-color: tomato; */
 }
 
@@ -76,11 +73,14 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   border-bottom: 1px solid #ececec;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 /* header menu */
 .page-header .container {
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 
 .display-nav-page {
@@ -90,8 +90,7 @@ img {
 .site-nav {
   display: flex;
   margin-left: 93px;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding: 0;
 }
 .site-nav .group {
   margin-left: 50px;
@@ -102,6 +101,7 @@ img {
 .auth-nav {
   display: flex;
   align-items: center;
+  padding: 0;
 }
 .auth-nav .group {
   margin-right: 50px;
@@ -130,13 +130,10 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 0 30px 0;
-  /* padding: 200px 452px 280px; */
+  padding: 200px 452px 280px;
 
   /* outline */
 }
-/* .fon-hero {
-  height: 600px;
-} */
 
 .auth-nav.link {
   font-family: var(--primery-text);
@@ -155,19 +152,18 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   border-radius: 4px;
-  /* margin-top: 40px;
-  margin-top: 94px; */
 }
 
 /* body */
 /* optimization details work */
-.section {
+/* .section {
   padding-bottom: 94px;
-  text-align: center;
-}
+  text-align: left;
+} */
 .features-list {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
 }
 .features-list .block-features {
   width: 270px;
@@ -189,6 +185,10 @@ img {
   line-height: 1.7em;
   letter-spacing: 0.03em;
 }
+.tech {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
 .works {
   margin-top: 0;
   display: flex;
@@ -209,9 +209,8 @@ img {
   line-height: 1.16em;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
   padding-top: 94px;
-  margin: 0;
+  margin: 0 0 50px;
 }
 .works-names {
   font-family: var(--primery-text);
@@ -220,18 +219,22 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-top: 30px;
 }
-.section h2 {
-  margin: 0;
+.title-name-work {
+  text-align: center;
+  padding-bottom: 10px;
 }
+
 .features-list {
-  margin-top: 94px;
+  padding-top: 94px;
   margin-bottom: 0;
 }
 .features {
   display: flex;
   flex-wrap: nowrap;
   margin: 0;
+  padding: 0;
 }
 .features li {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -252,7 +255,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 .site-nav .link-header {
@@ -284,6 +287,7 @@ img {
 }
 .team {
   background-color: var(--section-background);
+  padding-bottom: 94px;
 }
 
 .section-button p {
@@ -300,6 +304,7 @@ img {
   line-height: 1.71em;
   letter-spacing: 0.03em;
   margin: 0;
+  padding: 60px 0 60px;
 }
 
 .email-address {
@@ -311,7 +316,13 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
+address li {
+  padding-top: 9px;
+}
+.footer-list {
+  padding: 0;
+  margin: 0;
+}
 .tel-address {
   font-family: var(--primery-text);
   font-weight: normal;
@@ -329,6 +340,7 @@ img {
   line-height: 1.71;
   color: #ffffff;
   letter-spacing: 0.03em;
+  padding-top: 20px;
 }
 
 /* button */
@@ -360,6 +372,7 @@ img {
   list-style: none;
   margin-bottom: 56px;
   margin-top: 0;
+  padding: 0;
 }
 
 .section-button > h2 {
@@ -377,7 +390,6 @@ img {
   background: var(--primery-background);
   border-radius: 4px;
   cursor: pointer;
-  min-width: 100px;
 }
 .button-line li {
   margin-left: 8px;
@@ -436,10 +448,9 @@ img {
   margin-top: var(--card-set-gap);
   border: 1px solid #eeeeee;
 }
-.project-works .block-projects:last-child {
-  margin-right: 0;
+.block-projects:nth-child(3n + 1) {
+  margin-left: 0;
 }
-
 .card-heading {
   padding: 20px 24px 0px;
   text-align: left;
@@ -448,6 +459,7 @@ img {
 .card-text {
   padding: 4px 24px 20px;
   text-align: left;
+  margin: 0;
 }
 
 /* logo white */
